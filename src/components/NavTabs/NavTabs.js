@@ -80,12 +80,12 @@ const Tab = styled(TabUnstyled)`
   font-family: IBM Plex Sans, sans-serif;
   color: white;
   cursor: pointer;
-  font-size: 0.875rem;
+  font-size: 1.5vh;
   font-weight: bold;
   background-color: transparent;
   width: 100%;
-  padding: 12px 16px;
-  margin: 6px 6px;
+  padding: 1vh 1vh;
+  margin: 0.3vh 0.2vh;
   border: none;
   border-radius: 5px;
   display: flex;
@@ -120,7 +120,7 @@ const TabPanel = styled(TabPanelUnstyled)`
 `;
 
 const TabsList = styled(TabsListUnstyled)`
-  min-width: 320px;
+  width: 99%;
   background-color: ${red[500]};
   border-radius: 8px;
   margin-bottom: 16px;
@@ -128,6 +128,7 @@ const TabsList = styled(TabsListUnstyled)`
   align-items: center;
   justify-content: center;
   align-content: space-between;
+  // flex-wrap: wrap;
 `;
 
 function NavTabs() {

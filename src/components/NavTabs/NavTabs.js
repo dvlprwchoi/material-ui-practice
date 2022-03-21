@@ -46,19 +46,22 @@ import Buttons from '../Buttons/Buttons';
 import Modals from '../Modals/Modals';
 import RadioButtons from '../RadioButtons/RadioButtons';
 import Switches from '../Switches/Switches';
+import TextFields from '../TextFields/TextFields';
+import Cards from '../Cards/Cards';
+import SpeedDials from '../SpeedDials/SpeedDials';
 
-const blue = {
-  50: '#F0F7FF',
-  100: '#C2E0FF',
-  200: '#80BFFF',
-  300: '#66B2FF',
-  400: '#3399FF',
-  500: '#007FFF',
-  600: '#0072E5',
-  700: '#0059B2',
-  800: '#004C99',
-  900: '#003A75',
-};
+// const blue = {
+//   50: '#F0F7FF',
+//   100: '#C2E0FF',
+//   200: '#80BFFF',
+//   300: '#66B2FF',
+//   400: '#3399FF',
+//   500: '#007FFF',
+//   600: '#0072E5',
+//   700: '#0059B2',
+//   800: '#004C99',
+//   900: '#003A75',
+// };
 
 const red = {
   50: '#fff0f0',
@@ -129,12 +132,15 @@ const TabsList = styled(TabsListUnstyled)`
 
 function NavTabs() {
   return (
-    <TabsUnstyled defaultValue={3}>
+    <TabsUnstyled defaultValue={6}>
       <TabsList>
         <Tab>Buttons</Tab>
         <Tab>Modals</Tab>
         <Tab>Radio Buttons</Tab>
         <Tab>Switches</Tab>
+        <Tab>Text Fields</Tab>
+        <Tab>Speed Dials</Tab>
+        <Tab>Cards</Tab>
       </TabsList>
       <TabPanel value={0}>
         <Buttons />
@@ -147,6 +153,15 @@ function NavTabs() {
       </TabPanel>
       <TabPanel value={3}>
         <Switches />
+      </TabPanel>
+      <TabPanel value={4}>
+        <TextFields />
+      </TabPanel>
+      <TabPanel value={5}>
+        <SpeedDials />
+      </TabPanel>
+      <TabPanel value={6}>
+        <Cards />
       </TabPanel>
     </TabsUnstyled>
   );

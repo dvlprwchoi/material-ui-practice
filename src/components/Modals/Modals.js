@@ -118,7 +118,10 @@ function NestedModal() {
 function Modals() {
   return (
     <div className="modals">
+      <h2>Modals</h2>
+      <h3>Basic Modal</h3>
       <BasicModal />
+      <h3>Nested Modal</h3>
       <NestedModal />
     </div>
   );

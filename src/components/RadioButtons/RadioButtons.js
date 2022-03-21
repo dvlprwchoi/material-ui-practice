@@ -9,7 +9,8 @@ import { pink, orange } from '@mui/material/colors';
 function RadioButtons() {
   return (
     <div className="radio-buttons">
-      <h2>Basic Radio Buttons</h2>
+      <h2>Radio Buttons</h2>
+      <h3>Basic Radio Buttons</h3>
       <FormControl>
         <FormLabel id="basic-radio-buttons-group-label">Option</FormLabel>
         <RadioGroup
@@ -22,7 +23,7 @@ function RadioButtons() {
           <FormControlLabel value="C" control={<Radio />} label="C" />
         </RadioGroup>
       </FormControl>
-      <h2>Horizontal Basic Radio Buttons with different sizes and colors</h2>
+      <h3>Horizontal Basic Radio Buttons with different sizes and colors</h3>
       <FormControl>
         <FormLabel id="horizontal-radio-buttons-group-label">Option</FormLabel>
         <RadioGroup

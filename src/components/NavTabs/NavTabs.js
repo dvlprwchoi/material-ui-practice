@@ -45,6 +45,7 @@ import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import Buttons from '../Buttons/Buttons';
 import Modals from '../Modals/Modals';
 import RadioButtons from '../RadioButtons/RadioButtons';
+import Switches from '../Switches/Switches';
 
 const blue = {
   50: '#F0F7FF',
@@ -128,11 +129,12 @@ const TabsList = styled(TabsListUnstyled)`
 
 function NavTabs() {
   return (
-    <TabsUnstyled defaultValue={0}>
+    <TabsUnstyled defaultValue={3}>
       <TabsList>
         <Tab>Buttons</Tab>
         <Tab>Modals</Tab>
         <Tab>Radio Buttons</Tab>
+        <Tab>Switches</Tab>
       </TabsList>
       <TabPanel value={0}>
         <Buttons />
@@ -142,6 +144,9 @@ function NavTabs() {
       </TabPanel>
       <TabPanel value={2}>
         <RadioButtons />
+      </TabPanel>
+      <TabPanel value={3}>
+        <Switches />
       </TabPanel>
     </TabsUnstyled>
   );
